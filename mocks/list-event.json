@@ -1,1 +1,20 @@
-{}
+{
+    "requestContext": {
+        "identity": {
+          "cognitoIdentityId": "USER-SUB-1234"
+        }
+      }
+}
+
+// npx aws-api-gateway-cli-test \
+// --username='bhasineeraj@protonmail.com' \
+// --password='admin123' \
+// --user-pool-id='us-east-1_QTtjiN885' \
+// --app-client-id='37c80lj5lp63g815odi9q9c96n' \
+// --cognito-region='us-east-1' \
+// --identity-pool-id='us-east-1:9b116114-b062-4ef4-ac0c-4e4239da1d8b' \
+// --invoke-url='https://rnq56jzbi8.execute-api.us-east-1.amazonaws.com/prod' \
+// --api-gateway-region='us-east-1' \
+// --path-template='/notes' \
+// --method='POST' \
+// --body='{"content":"hello world","attachment":"hello.jpg"}'
